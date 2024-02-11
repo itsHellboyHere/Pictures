@@ -1,0 +1,244 @@
+/* font-family: 'Protest Riot', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 2px solid rgba(0,0,0,0.2);
+    padding: 5px 5px;
+    word-spacing: 20px;
+    letter-spacing: 6px;
+ 
+}
+.navbar >ul>li{
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Protest Riot', sans-serif;
+    /* background: blue; */
+    color: black;
+    text-transform: capitalize;
+    transition: all  .5s linear; 
+    
+}
+ .navbar >ul>li:hover{
+    transform: translate(5px ,5px);
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.4);
+    
+} 
+.item{
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+       color: rgb(235, 231, 231);
+font-size: 25px;
+text-transform: uppercase;
+text-shadow: -11px -12px 1px rgba(234, 227, 227, 0.33); ;
+transition: transform 1s  ease-in-out;
+    flex-wrap: wrap;
+}
+.item-1{
+      margin-top: 20px;
+    background:  linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./b-images/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.item-2{
+      margin-top: 20px;
+     background:  linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./b-images/9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+.item-3{
+      margin-top: 20px;
+     background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('./b-images/12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+.item-4{
+      background:  linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./b-images/4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+.item-5{
+      background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('./b-images/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+.item-6{
+      background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('./b-images/5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+.item-7{
+      background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('./b-images/7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+.item-8{
+      background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./b-images/8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+.item-9{
+      background:  linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./b-images/6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+.item-10{
+      background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./b-images/10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+.item:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+@media screen and (min-width:576px){
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "one one  two three three "
+    "one one four five five"
+    "six seven seven five five "
+    "six eight nine nine ten"
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    /* border: 2px solid rgba(0,0,0,0.2); */
+    border: none; 
+    padding: 5px 5px;
+    word-spacing: 35px;
+    letter-spacing: 5px;
+}
+   .navbar >ul >li{ display: inline-block;
+    font-size: 25px;
+    font-family: 'Protest Riot', sans-serif;
+    /* background: blue; */
+    color: black;
+    text-transform: capitalize;
+    transition: all  .5s linear; 
+    
+}
+ .navbar >ul>li:hover{
+    transform: translate(5px ,5px);
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.4);
+    
+} 
+.item{
+    color: rgb(235, 231, 231);
+font-size: 25px;
+text-transform: uppercase;
+text-shadow: -11px -12px 1px rgba(234, 227, 227, 0.33); 
+transition: transform 1s  ease-in-out;
+border: 1px solid white;
+}   
+.item:hover{
+    transform: scale(1.2);
+}
+
+.item-1{
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('./b-images/2.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+/* color: white;
+font-size: 60px; */
+grid-area: one;
+}
+.item-2{
+background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./b-images/9.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+grid-area: two;
+}
+.item-3{
+background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./b-images/12.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+grid-area: three;
+}
+.item-4{
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('./b-images/4.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+grid-area: four;
+}
+.item-5{
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('./b-images/3.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+grid-area: five;
+}
+.item-6{
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('./b-images/5.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+grid-area: six;
+}
+.item-7{
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('./b-images/7.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+grid-area: seven;
+}
+.item-8{
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('./b-images/8.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+grid-area: eight;
+}
+.item-9{
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('./b-images/6.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+grid-area: nine;
+}
+.item-10{
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('./b-images/10.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+grid-area: ten;
+}
+
+}
+
+
+
